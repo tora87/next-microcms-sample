@@ -18,7 +18,6 @@ export const Header = () => {
           <div className={`${styles.menu_btn} ${isOpen ? 'active':''}`} onClick={clickToggle}>
             <span></span>
           </div>
-          <h2 className={`test ${isOpen ? 'active' : ''}`}>aaa</h2>
         </div>
       </div>
       <ul className={`${styles.header_nav} ${isOpen ? 'active':''}`}>
