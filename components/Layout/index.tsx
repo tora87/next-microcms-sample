@@ -1,6 +1,6 @@
 import Head from "next/head"
 import type { ReactNode } from "react"
-import { Header } from './Header'
+import { Header } from '../Header'
 
 interface Props{
   children: ReactNode
