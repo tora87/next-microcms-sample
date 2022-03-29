@@ -1,0 +1,31 @@
+.flex_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_nav {
+  display: flex;
+  align-items: center;
+
+  &_item {
+    margin-right: 20px;
+
+    a {
+      font-size: 1rem;
+      text-transform: uppercase;
+      transition: 0.4s;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  &_item:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.copyright {
+  font-size: 0.8rem;
+}
