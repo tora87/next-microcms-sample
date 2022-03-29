@@ -5,7 +5,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Layout>
-        <h1>Next.js x MicroCMS Sample!!</h1>
+        <div></div>
       </Layout>
     </>
   )
