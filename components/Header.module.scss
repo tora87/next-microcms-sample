@@ -1,0 +1,43 @@
+.flex_wrapper {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo_title {
+  font-size: 1.5rem;
+}
+
+.menu_btn {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+
+  span,
+  span::before,
+  span::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #000;
+    position: absolute;
+  }
+
+  span {
+    background: transparent;
+
+    &::before {
+      top: 4px;
+    }
+
+    &::after {
+      bottom: 4px;
+    }
+  }
+}
