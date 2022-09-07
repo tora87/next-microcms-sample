@@ -20,7 +20,7 @@ export const Header = () => {
           </div>
         </div>
       </div>
-      <ul className={`${styles.header_nav} ${isOpen ? 'active':''}`}>
+      <ul className={`${styles.header_nav} ${isOpen ? styles.active:''}`}>
         <li>
           <Link href='/products'>
             <a>products</a>
