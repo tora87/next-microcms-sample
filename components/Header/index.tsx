@@ -1,11 +1,11 @@
 import styles from './Header.module.scss'
 import Link from 'next/link'
-import { useState } from 'react'
+import { useState, FC } from 'react'
 
-export const Header = () => {
-  const [isOpen, setIsOpen] = useState(false)
+export const Header: FC = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false)
 
-  const clickToggle = () => {
+  const clickToggle: VoidFunction = () => {
     setIsOpen(!isOpen)
   }
   return (
