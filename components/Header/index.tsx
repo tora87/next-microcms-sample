@@ -1,26 +1,32 @@
 import styles from './Header.module.scss'
 import Link from 'next/link'
-import {useState} from 'react'
+import { useState } from 'react'
 
 export const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
   const clickToggle = () => {
-    setIsOpen(!isOpen);
+    setIsOpen(!isOpen)
   }
-  return(
+  return (
     <header className={'header'}>
-      <div className="container">
+      <div className='container'>
         <div className={styles.flex_wrapper}>
-          <Link href="/">
-            <a><h1 className={styles.logo_title}>Furniture Design</h1></a>
+          <Link href='/'>
+            <a>
+              <h1 className={styles.logo_title}>Furniture Design</h1>
+            </a>
           </Link>
-          <div className={`${styles.menu_btn} ${isOpen ? 'active':''}`} onClick={clickToggle}>
+          <div
+            className={`${styles.menu_btn} ${isOpen ? 'active' : ''}`}
+            onClick={clickToggle}
+          >
             <span></span>
           </div>
         </div>
       </div>
-      <ul className={`${styles.header_nav} ${isOpen ? styles.active:''}`}>
+
+      <ul className={`${styles.header_nav} ${isOpen ? styles.active : ''}`}>
         <li>
           <Link href='/products'>
             <a>products</a>
@@ -40,7 +46,7 @@ export const Header = () => {
           <Link href='/contact'>
             <a>contact</a>
           </Link>
-        </li>  
+        </li>
       </ul>
     </header>
   )
