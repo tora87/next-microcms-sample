@@ -8,6 +8,7 @@ export const Header: FC = () => {
   const clickToggle: VoidFunction = () => {
     setIsOpen(!isOpen)
   }
+
   return (
     <header className={'header'}>
       <div className='container'>
@@ -18,7 +19,7 @@ export const Header: FC = () => {
             </a>
           </Link>
           <div
-            className={`${styles.menu_btn} ${isOpen ? 'active' : ''}`}
+            className={`${styles.menu_btn} ${isOpen ? styles.active : ''}`}
             onClick={clickToggle}
           >
             <span></span>
