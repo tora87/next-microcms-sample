@@ -17,7 +17,7 @@ export const Layout = ({ children }: Props) => {
       <Header />
 
       <main>
-        <div className='contents-wrapper'>{children}</div>
+        {children}
       </main>
 
       <Footer />
