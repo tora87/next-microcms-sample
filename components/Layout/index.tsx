@@ -17,7 +17,7 @@ export const Layout = ({ children }: Props) => {
       <Header />
 
       <main>
-        aa
+        {children}
       </main>
 
       <Footer />

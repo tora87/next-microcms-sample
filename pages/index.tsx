@@ -1,6 +1,5 @@
 import type { GetStaticPathsResult, GetStaticProps, GetStaticPropsResult, NextPage, NextPageContext } from 'next'
 import { Layout } from '../components/Layout';
-import { getStaticProps } from '../components/ProductList';
 import { client } from '../libs/client';
 
 interface Product {
@@ -22,17 +21,20 @@ interface Props {
   products: Product[]
 }
 
-const Home: NextPage = () => {
+const Home: NextPage = (props:Props) => {
+  console.log(props)
   return (
     <>
       <Layout>
-        <div></div>
+        <div className='container'>
+          <div>sample</div>
+        </div>
       </Layout>
     </>
   )
 }
 
-export const getStaticProps = async() => {
+export const getStaticProps: GetStaticProps = async() => {
   const data = await client.get({endpoint: 'products'})
 
   return {
