@@ -2,7 +2,6 @@ import Head from 'next/head'
 import type { ReactNode } from 'react'
 import { Header } from '../Header'
 import { Footer } from '../Footer'
-import { ProductList } from '../ProductList'
 
 interface Props {
   children: ReactNode
@@ -18,7 +17,7 @@ export const Layout = ({ children }: Props) => {
       <Header />
 
       <main>
-        <div className='container'>{<ProductList />}</div>
+        aa
       </main>
 
       <Footer />
